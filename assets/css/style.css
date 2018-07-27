@@ -1,0 +1,487 @@
+:root {
+	--first-color: black;
+	--second-color: white;
+	--first-font: 'Raleway', sans-serif;
+}
+
+/*==================*/
+/* 		Nav Bar 	*/
+/*==================*/
+nav.navbar-inverse {
+	opacity: 1;
+}
+
+/*===============*/
+/* 		Home	 */
+/*===============*/
+
+div#home {
+	min-height: 92.5vh;
+	width: 100%;
+	background-image: url("../img/bg2.jpg");
+	background-attachment: fixed;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+}
+
+img#myPic {
+	height: 618px;
+	width: 650px;
+}
+
+div#home_right {
+	text-align: center;
+	color: var(--second-color);
+	padding-top: 100px;
+}
+
+h1.home_intro {
+	font-family: var(--first-font);
+	font-size: 3em;
+	text-shadow: 1px 1px var(--first-color);
+	color: var(--first-color);
+}
+
+span#myName {
+	font-size: 2em;
+	text-transform: uppercase;
+	line-height: 100px;
+	color: var(--second-color);
+	text-shadow: 3px 3px var(--first-color);
+	font-family: 'Coda Caption', sans-serif;
+}
+
+p.intro_desc {
+	font-size: 20px;
+	background-color: var(--first-color);
+	opacity: 0.8;
+	border-radius: 10px 10px 10px 10px;
+	padding: 9px;
+}
+
+/*==================*/
+/* 		Skills 		*/
+/*==================*/
+
+div#skills {
+	min-height: 75vh;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+h3.skills_intro {
+	padding-top: 30px;
+	font-family: var(--first-font);
+	text-transform: capitalize;
+	text-decoration: underline;
+	color: var(--first-color);
+	margin-top: 30px;
+	font-size: 50px;
+	margin-bottom: 50px;
+}
+
+div.img_border {
+	border: 5px double grey;
+	width: 175px;
+	height: 175px;
+	margin: 5px;
+	padding: 20px;
+	border-radius: 50%;
+	display: inline-block;
+	background-color: var(--second-color);
+}
+
+img.skills_pic {
+	height: 100px;
+	width: 100px;
+}
+
+/*===================*/
+/* 	   Portfolio	 */
+/*===================*/
+div#portfolio {
+	min-height: 92.5vh;
+	width: 100%;
+	background-image: url("../img/bg3.jpg");
+	background-attachment: fixed;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: right;
+}
+
+h3#portfolio_intro {
+	padding-top: 30px;
+	color: var(--second-color);
+	font-size: 50px;
+	text-decoration: underline;
+	text-shadow: 1px 1px var(--first-color);
+	margin-bottom: 70px;
+}
+
+div.works {
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+img#proj_1,
+img#proj_2, 
+img#proj_3 {
+	height: 50vh;
+	width: 100%;
+}
+
+div.proj_det1,
+div.proj_det2,
+div.proj_det3 {
+	background-color: white;
+	opacity: 0.7;
+}
+
+div.proj_det1,
+div.proj_det3 {
+	text-align: left;
+}
+
+
+
+
+/*==================*/
+/* 		Contact 	*/
+/*==================*/
+div#contact{
+	height: 95vh;
+	font-family: var(--first-font);
+}
+
+div#contact_left {
+	height: 100%;
+	background-image: url("../img/kev2.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h3.quote {
+	font-size: 70px;
+	font-weight: bold;
+	color: var(--second-color);
+	text-align: left;
+	padding-right: 80px;
+}
+
+div#contact_right {
+	height: 100%;
+	background-color: #161b29;
+	text-align: center;
+	color: var(--second-color);
+}
+
+h3#contact_intro {
+	text-decoration: underline;
+	padding-top: 20vh;
+	font-size: 10vh;
+}
+
+p.contact_det {
+	margin-top: 20px;
+	font-size: 30px;
+}
+
+
+@media only screen and (max-width: 360px) {
+
+	/* Home */
+	div#home {
+		min-height: 105vh;
+		width: 100%;
+	}
+	div#home {
+		min-height: 105vh;
+		width: 100%;
+	}
+
+	div#home_left {
+		text-align: center;
+	}
+
+	div#home_right {
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+	img#myPic {
+		height: 200px;
+		width: 250px;
+		margin-top: 5vh;
+		border-radius: 50%;
+		background-color: var(--second-color);
+	}
+
+	div#home_right {
+		text-align: center;
+	}
+
+	h1.home_intro {
+		font-size: 5vh;
+	}
+
+	span#myName {
+		font-size: 10vh;
+		line-height: 10vh;
+	}
+
+	p.intro_desc {
+		font-size: 10px;
+	}
+
+	/* Skills */
+	h3.skills_intro {
+		font-size: 20px;
+	}
+
+	div.img_border {
+		width: 125px;
+		height: 125px;
+	}
+
+	img.skills_pic {
+		height: 75px;
+		width: 75px;
+	}
+
+
+	/* Portfolio */
+	h3#portfolio_intro {
+		font-size: 20px;
+	}
+
+	h1.proj_name {
+		font-size: 20px;
+	}
+
+	div.proj_det1,
+	div.proj_det2,
+	div.proj_det3  {
+		text-align: center;
+	}
+
+	img#proj_1,
+	img#proj_2, 
+	img#proj_3 {
+		height: 30vh;
+	}
+
+	div.works {
+		margin-bottom: 0;
+	}
+
+	/* Contact */
+	h3.quote,
+	h3#contact_intro {
+		margin-top: 0;
+	}
+
+	h3.quote {
+		font-size: 40px;
+		padding-right: 0;
+	}
+
+	div#contact_right {
+		min-height: 100vh;
+	} 
+
+	img.contact_icons {
+		height: 50px;
+		width: 50px;
+	}
+
+	p.contact_det {
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (min-width: 361px) and (max-width: 767px) {
+
+	/* Home */
+	div#home {
+		min-height: 170vh;
+		width: 100%;
+	}
+
+	#home_left {
+		text-align: center;
+	}
+
+	div#home_right {
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+	img#myPic {
+		margin-top: 5vh;
+		height: 200px;
+		width: 250px;
+		border-radius: 50%;
+		background-color: var(--second-color);
+	}
+
+	h1.home_intro {
+		font-size: 5vh;
+		text-shadow: 0 0 0;
+	}
+
+	span#myName {
+		font-size: 10vh;
+		line-height: 10vh;
+		text-shadow: 1px 1px var(--first-color);
+	}
+
+	/* Skills */
+	h3.skills_intro {
+		font-size: 30px;
+	}
+
+	div.img_border {
+		width: 125px;
+		height: 125px;
+	}
+
+	img.skills_pic {
+		height: 75px;
+		width: 75px;
+	}
+
+
+	/* Portfolio */
+	h3#portfolio_intro {
+		font-size: 30px;
+	}
+
+	div.proj_det1,
+	div.proj_det2,
+	div.proj_det3  {
+		text-align: center;
+	}
+
+	img#proj_1,
+	img#proj_2, 
+	img#proj_3 {
+		height: 70vh;
+	}
+
+	div.works {
+		margin-bottom: 0;
+	}
+
+	/* Contact */
+	h3.quote,
+	h3#contact_intro {
+		margin-top: 0;
+	}
+
+	h3.quote {
+		font-size: 40px;
+		padding-right: 0;
+	}
+
+	div#contact_right {
+		min-height: 80vh;
+	} 
+
+	img.contact_icons {
+		height: 50px;
+		width: 50px;
+	}
+
+	p.contact_det {
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+	/* Home */
+	div#home {
+		height: 105vh;
+		width: 100%;
+	}
+
+	#home_left {
+		text-align: center;
+	}
+
+	img#myPic {
+		height: 420px;
+		width: 450px;
+		margin-top: 10vh;
+		border-radius: 50%;
+		background-color: var(--second-color);
+	}
+
+	div#home_right {
+		margin-top: 0;
+		padding-top: 50px;
+	}
+
+	/* Skills */
+	div.img_border {
+		width: 200px;
+		height: 200px;
+	}
+
+	img.skills_pic {
+		height: 150px;
+		width: 150px;
+		padding: 10px;
+	}
+
+	/* Portfolio */
+	div#portfolio {
+		padding-bottom: 40px;
+	}
+
+	div.proj_det1,
+	div.proj_det2,
+	div.proj_det3  {
+		font-size: 20px;
+	}
+
+	div.proj_det1,
+	div.proj_det3 {
+		text-align: left;
+	}
+
+	img#proj_1,
+	img#proj_2, 
+	img#proj_3 {
+		height: 40vh;
+		width: 100%;
+	} 
+
+	div.works {
+		margin-bottom: 0;
+	}
+
+	/* Contact */
+	h3.quote,
+	h3#contact_intro {
+		margin-top: 0;
+	}
+
+	h3.quote {
+		font-size: 70px;
+		padding-right: 40px;
+		text-align: center;
+		padding-top: 30px;
+	}
+
+	p.contact_det {
+		margin-top: 20px;
+		font-size: 30px;
+	}
+}
+
