@@ -21,6 +21,8 @@
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 	<!-- Custom Stylesheet -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
@@ -37,9 +39,9 @@
 				</button>
 				<a class="navbar-brand" href="#">Kevin Salvino</a>
 			</div>
-			<div class="collapse navbar-collapse" id="myNavbar">
+			<div class="collapse navbar-collapse topBotomBordersIn" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+					<li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
 					<li><a href="#skills"><i class="fas fa-cogs"></i> Skills</a></li>
 					<li><a href="#portfolio"><i class="fas fa-folder-open"></i> Portfolio</a></li>
 					<li><a href="#contact"><i class="fas fa-comment-alt"></i> Talk to Me</a></li>
@@ -54,12 +56,12 @@
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12" id="home">
 				<div class="col-lg-6 col-md-6" id="home_left">
-					<img src="assets/img/kev3.png" alt="Kevin Salvino" id="myPic">
+					<img class="swing-in-bottom-fwd" src="assets/img/kev3.png" alt="Kevin Salvino" id="myPic">
 				</div>
 				<div class="col-lg-6 col-md-6" id="home_right">
-					<h1 class="home_intro">Hi! My name is <br><span id="myName">Kevin Salvino<span></h1>
+					<h1 class="home_intro slide-in-right">Hi! My name is <br><span id="myName">Kevin Salvino<span></h1>
 
-					<p class="intro_desc">I am a Web Developer who likes to learn new technologies and tools.<br>An aspiring full stack web developer.<br>A former bootcamper in Tuitt Philippines Inc.<br>A graduate of BS in Information & Technology from La Consolacion College Manila.</p>
+					<p class="intro_desc flip-in-ver-right">I am a Web Developer who likes to learn new technologies and tools.<br>An aspiring full stack web developer.<br>A former bootcamper in Tuitt Philippines Inc.<br>A graduate of BS in Information & Technology from La Consolacion College Manila.</p>
 				</div>
 			</div>
 		</div>
@@ -67,33 +69,33 @@
 		<!-- Skills -->
 		<div class="row">
 			<div class="col-lg-12" id="skills">
-				<h3 class="skills_intro">Web Technologies and Tools</h3>
-				<div class="img_border">
+				<h3 class="skills_intro" data-aos="fade-up">Web Technologies and Tools</h3>
+				<div class="img_border" data-aos="flip-right">
 					<img src="assets/img/html.png" alt="HTML5" class="skills_pic" id="html_pic">
 				</div>
-				<div class="img_border">
+				<div class="img_border" data-aos="flip-right">
 					<img src="assets/img/css.png" alt="CSS3" class="skills_pic" id="css_pic">
 				</div>				
-				<div class="img_border">
+				<div class="img_border" data-aos="flip-right">
 					<img src="assets/img/javascript.png" alt="JavaScript" class="skills_pic" id="js_pic">
 				</div>
-				<div class="img_border">
+				<div class="img_border" data-aos="flip-right">
 					<img src="assets/img/bootstrap.png" alt="Bootstrap" class="skills_pic" id="bs_pic">
 				</div>				
-				<div class="img_border">
+				<div class="img_border" data-aos="flip-right">
 					<img src="assets/img/jquery.png" alt="jQuery" class="skills_pic" id="jq_pic">
 				</div>				
 				<br>
-				<div class="img_border">
+				<div class="img_border" data-aos="flip-right">
 					<img src="assets/img/php.png" alt="PHP" class="skills_pic" id="php_pic">
 				</div>
-				<div class="img_border">
+				<div class="img_border" data-aos="flip-right">
 					<img src="assets/img/laravel.png" alt="Laravel" class="skills_pic" id="laravel_pic">
 				</div>				
-				<div class="img_border">
+				<div class="img_border" data-aos="flip-right">
 					<img src="assets/img/mysql.png" alt="MySQL" class="skills_pic" id="mysql_pic">
 				</div>				
-				<div class="img_border">
+				<div class="img_border" data-aos="flip-right">
 					<img src="assets/img/git.png" alt="Git" class="skills_pic" id="git_pic">
 				</div>
 			</div>
@@ -102,33 +104,33 @@
 		<!-- Porftolio -->
 		<div class="row">
 			<div class="col-lg-12" id="portfolio">
-				<h3 id="portfolio_intro">Featured Works</h3>
+				<h3 id="portfolio_intro" data-aos="fade-left">Featured Works</h3>
 
 				<div class="row works">
 					<div class="col-lg-6 col-md-6">
-						<a href="https://kevinsalvino.github.io/cap-proj-1/" target="_blank"><img src="assets/img/cap_1.png" id="proj_1"></a>
+						<a href="https://kevinsalvino.github.io/cap-proj-1/" target="_blank"><img src="assets/img/cap_1.png" id="proj_1" data-aos="fade-right"></a>
 					</div>
-					<div class="col-lg-6 col-md-6 proj_det1">
+					<div class="col-lg-6 col-md-6 proj_det1" data-aos="fade-left">
 						<h1 class="proj_name">Snivekolano</h1>
 						<p>A travel guide website wherein for now it only focuses the Bicol Region. It promotes the beauty of Bicol's culture, food, tourist attractions and its people.</p>
 					</div>
 				</div>
 				
 				<div class="row works">
-					<div class="col-lg-6 col-md-6 proj_det2">
+					<div class="col-lg-6 col-md-6 proj_det2" data-aos="fade-right">
 						<h1 class="proj_name">Bellini Online Shop</h1>
 						<p>An ecommerce website which is an online shopping bags. This is dedicated for my elder sister who sells bags online using facebook.</p>
 					</div>
 					<div class="col-lg-6 col-md-6">
-						<a href="https://bellinishop.000webhostapp.com/" target="_blank"><img src="assets/img/cap_2.png" id="proj_2"></a>
+						<a href="https://bellinishop.000webhostapp.com/" target="_blank"><img src="assets/img/cap_2.png" id="proj_2" data-aos="fade-left"></a>
 					</div>
 				</div>
 
 				<div class="row works">
 					<div class="col-lg-6 col-md-6">
-						<a href="http://kevin.frifster.ml/" target="_blank"><img src="assets/img/cap_3.png" id="proj_3"></a>
+						<a href="http://kevin.frifster.ml/" target="_blank"><img src="assets/img/cap_3.png" id="proj_3" data-aos="fade-right"></a>
 					</div>
-					<div class="col-lg-6 col-md-6 proj_det3">
+					<div class="col-lg-6 col-md-6 proj_det3" data-aos="fade-left">
 						<h1 class="proj_name">Echo</h1>
 						<p>A social media website dedicated for Tuitt's students, alumni, and its staff. Inspired by Twitter. A useful tool to easily connect with other colleagues and have discussions about programming, works, etc.</p>
 					</div>
@@ -139,16 +141,16 @@
 		<!-- Contact -->
 		<div class="row" id="contact">
 			<div class="col-lg-7" id="contact_left">
-				<h3 class="quote">Let us build together our success</h3>
+				<h3 class="quote" data-aos="fade-right">Let us build together our success</h3>
 			</div>
 			<div class="col-lg-5" id="contact_right">
-				<h3 id="contact_intro">Contact Me</h3>
-				<a href="https://www.facebook.com/kevsalvino" target="_blank"><img src="assets/img/facebook.png" class="contact_icons"></a>
-				<a href="https://github.com/kevinsalvino" target="_blank"><img src="assets/img/github.png" class="contact_icons"></a>
-				<a href="https://www.linkedin.com/in/kevinsalvino/" target="_blank"><img src="assets/img/linkedin.png" class="contact_icons"></a>
-				<a href="https://twitter.com/Kevsalvino" target="_blank"><img src="assets/img/twitter.png" class="contact_icons"></a>
-				<p class="contact_det"><i class="fas fa-mobile-alt"></i> +63 927-540-3175</p>
-				<p class="contact_det"><i class="fas fa-envelope"></i> kevinsalvino@gmail.com</p>
+				<h3 id="contact_intro" data-aos="zoom-in-up">Contact Me</h3>
+				<a href="https://www.facebook.com/kevsalvino" target="_blank"><img src="assets/img/facebook.png" class="contact_icons" data-aos="flip-up"></a>
+				<a href="https://github.com/kevinsalvino" target="_blank"><img src="assets/img/github.png" class="contact_icons" data-aos="flip-up"></a>
+				<a href="https://www.linkedin.com/in/kevinsalvino/" target="_blank"><img src="assets/img/linkedin.png" class="contact_icons" data-aos="flip-up"></a>
+				<a href="https://twitter.com/Kevsalvino" target="_blank"><img src="assets/img/twitter.png" class="contact_icons" data-aos="flip-up"></a>
+				<p class="contact_det" data-aos="flip-up"><i class="fas fa-mobile-alt"></i> +63 927-540-3175</p>
+				<p class="contact_det" data-aos="flip-up"><i class="fas fa-envelope"></i> kevinsalvino@gmail.com</p>
 			</div>
 		</div>
 
@@ -161,6 +163,12 @@
 
 	<!-- Bootstrap 3 -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<script>
+	  AOS.init();
+	</script>
 
 	<!-- Custom Script -->
 	<script src="assets/js/script.js"></script>
